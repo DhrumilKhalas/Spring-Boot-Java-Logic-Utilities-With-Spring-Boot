@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palindrome Result</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1 class="header">Assignment 1 (Student ID: 8994739)</h1>
+  <div class="outer-container">
+    <div class="card-container">
+      <div class="e-card playing">
+        <div class="image"></div>
+
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+
+        <div class="infotop">
+          <h2>Palindrome Check Result</h2>
+          <!-- Thymeleaf expression to display the result of palindrome check -->
+          <p th:text="${result}"></p>
+        </div>
+      </div>
+      <button class="back-btn" onclick="window.history.back()">
+        <img src="./back-icon.png" alt="Back" /><span>Back</span>
+      </button>
+    </div>
+  </div>
+</body>
+
+</html>
